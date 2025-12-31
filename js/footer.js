@@ -12,6 +12,16 @@ class AppFooter extends HTMLElement {
                     </div>
                     <p class="copyright">&copy; ${currentYear} Archuthan Mohanathasan.</p>
                 </div>
+                <div class="copyright">
+                    &copy; 2025 Archuthan Mohanathasan.
+                    <br>
+                    
+                    <span style="font-size: 0.6rem; opacity: 0.4;">
+                        <a href="https://www.flaticon.com/free-icons/growth" title="growth icons" style="color: inherit; text-decoration: none;">
+                            Icon by Freepik (Flaticon)
+                        </a>
+                    </span>
+                </div>
             </footer>
         `;
     }
