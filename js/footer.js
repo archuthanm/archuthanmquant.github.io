@@ -17,7 +17,7 @@ class AppFooter extends HTMLElement {
                     <br>
                     
                     <span style="font-size: 0.6rem; opacity: 0.4;">
-                        <a href="https://www.flaticon.com/free-icons/growth" title="growth icons" style="color: inherit; text-decoration: none;">
+                        <a href="https://www.flaticon.com/free-icons/economic" title="economic icons">Economic icons created by kornkun - Flaticon</a>
                             Icon by Freepik (Flaticon)
                         </a>
                     </span>
