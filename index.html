@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archuthan Mohanathasan | Quant Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div id="loader-wrapper">
+        <div class="chart-loader-container">
+            <canvas id="market-chart"></canvas>
+            <div class="loader-overlay-text">
+                <span class="mono-accent">GENERATING MARKET DATA...</span>
+                <div class="progress-track">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-nav">
+        <button id="up-btn" aria-label="Scroll Up">▲</button>
+        <button id="down-btn" aria-label="Scroll Down">▼</button>
+    </div>
+    
+    <div id="cursor"></div>
+    <app-navbar></app-navbar>
+
+    <main>
+        <header id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Archuthan Mohanathasan.</h1>
+                    
+                    <h2 id="typewriter-slogan" class="hero-subtitle faded"></h2>
+                    
+                    <p class="bio-text">
+                        A Computer Science student at King's College London building high-performance systems for financial markets.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#about" class="btn">More About Me</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="section-block compact-about">
+            <div class="container">
+                
+                <h3 class="section-header">01. About Me</h3>
+                <h2 id="typewriter-strings" class="hero-subtitle faded small-subtitle"></h2>
+        
+                <div class="about-split-layout">
+                    
+                    <div class="about-narrative">
+                        <ul class="quant-bullets">
+                            <li>
+                                <strong>Origin:</strong> A Computer Science background focused on high-performance systems and machine learning.
+                            </li>
+                            <li>
+                                <strong>Motivation:</strong> Solving problems in markets where nanoseconds of latency and single basis points of accuracy define success.
+                            </li>
+                            <li>
+                                <strong>Focus:</strong> Moving from theory to application by engineering robust systems for Options Pricing and Risk Analysis.
+                            </li>
+                        </ul>
+                        
+                        <a href="bio.html" class="btn-link">
+                            Read Full Bio <span class="arrow">→</span>
+                        </a>
+                    </div>
+        
+                    <div class="skills-compact-panel">
+                        <h4 class="skills-header-small">Technical Arsenal</h4>
+                        <div class="skills-mini-grid">
+                            <div class="skill-col">
+                                <span class="skill-title">Languages</span>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>C++</li>
+                                    <li>Scala</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </div>
+                            <div class="skill-col">
+                                <span class="skill-title">Libraries</span>
+                                <ul>
+                                    <li>NumPy / Pandas</li>
+                                    <li>SciPy / Sklearn</li>
+                                    <li>Matplotlib</li>
+                                    <li>Statsmodels</li>
+                                </ul>
+                            </div>
+                            <div class="skill-col">
+                                <span class="skill-title">Quant Concepts</span>
+                                <ul>
+                                    <li>Monte Carlo</li>
+                                    <li>Black-Scholes</li>
+                                    <li>Stat. Arbitrage</li>
+                                    <li>Risk Modeling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="focus-row">
+                    <h4 class="skills-header-small">Current Research Focus</h4>
+                    <div class="focus-grid-compact">
+                        
+                        <div class="focus-card">
+                            <div class="focus-header">
+                                <span class="focus-number">01</span>
+                                <h5>Quantitative Risk & Portfolio Theory</h5>
+                            </div>
+                            <p>
+                                How do you "invest sensibly" in a mathematical sense? I'm fascinated by Modern Portfolio Theory (MPT) and the application of maths and programming to quantify and minimise risk.
+                            </p>
+                        </div>
+        
+                        <div class="focus-card">
+                            <div class="focus-header">
+                                <span class="focus-number">02</span>
+                                <h5>Algorithmic Strategy & Market Analysis</h5>
+                            </div>
+                            <p>
+                                I'm exploring how to apply Python and time-series analysis to find statistical patterns in stock market data. My goal is to move from theory to application by building and testing data-driven strategies.
+                            </p>
+                        </div>
+        
+                        <div class="focus-card">
+                            <div class="focus-header">
+                                <span class="focus-number">03</span>
+                                <h5>Emerging Assets & Volatility</h5>
+                            </div>
+                            <p>
+                                Assets like cryptocurrencies present a unique challenge. I'm researching how they fit into a diversified portfolio and how advanced models can be used to understand their extreme volatility.
+                            </p>
+                        </div>
+        
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <section id="projects" class="section-block">
+            <div class="container">
+                <h3 class="section-header">02. Selected Projects</h3>
+                
+                <div class="project-cards">
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="folder-icon">📂</span>
+                            <div class="links">
+                                <a href="https://github.com/archuthanm/options-pricing-risk-analysis" target="_blank">GitHub</a>
+                                <a href="assets/documents/Options Pricing and Risk Analysis Project.pdf" target="_blank">Paper</a>
+                            </div>
+                        </div>
+                        <a href="projects/options-pricing.html">
+                            <h4>Options Pricing Analysis</h4>
+                        </a>
+                        <p class="project-desc">
+                            Built and validated robust pricing models using Monte Carlo simulations. Implemented variance reduction techniques to improve convergence speed and accuracy.
+                        </p>
+                        <div class="card-tags">
+                            <span>Python</span>
+                            <span>Monte Carlo</span>
+                            <span>Black-Scholes</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="folder-icon">📂</span>
+                            <div class="links">
+                                <a href="https://github.com/archuthanm/portfolio-optimisation-mpt" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                        <a href="projects/mpt-optimisation.html">
+                            <h4>Modern Portfolio Theory</h4>
+                        </a>
+                        <p class="project-desc">
+                            Constructed the Efficient Frontier using Monte Carlo simulations on S&P 500 data. Optimised for Max Sharpe Ratio and Minimum Volatility portfolios.
+                        </p>
+                        <div class="card-tags">
+                            <span>Python</span>
+                            <span>Optimisation</span>
+                            <span>SciPy</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="folder-icon">📂</span>
+                            <div class="links">
+                                <a href="https://github.com/archuthanm/fama-french-hml-factor" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                        <a href="projects/fama-french.html">
+                            <h4>Fama-French Replication</h4>
+                        </a>
+                        <p class="project-desc">
+                            Replicated the 'Value' (HML) factor. Constructed long-short portfolios based on Book-to-Market ratios to test the value premium in the S&P 500.
+                        </p>
+                        <div class="card-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Factor Investing</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-block">
+            <div class="container">
+                <h3 class="section-header">03. Contact</h3>
+                
+                <div class="contact-wrapper">
+                    <h1 class="contact-title">Get In Touch</h1>
+                    <p class="contact-sub">
+                        I'm actively seeking internship and research opportunities in quantitative finance.
+                    </p>
+        
+                    <form action="https://formspree.io/f/xqavkzev" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="code-label">// Name</label>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="code-label">// Email</label>
+                            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="code-label">// Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="code-label">// Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <app-footer></app-footer>
+
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/footer.js" defer></script>
+</body>
+</html>
